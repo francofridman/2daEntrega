@@ -8,10 +8,9 @@ function cargarTenistas () {
     .then(res => res.json())
     .then(tenistas => {
         
-        let htmlAcumulado = "";
 
          for(const tenista of tenistas)  {
-             document.querySelector("section").innerHTML +=
+             document.querySelector("#btn-tenistas").innerHTML +=
              `<div> <h2>  ${tenista.nombre}</h2>
              <p>Edad : ${tenista.edad} </p>
              <p>Mano : ${tenista.mano}  </p>
@@ -21,10 +20,15 @@ function cargarTenistas () {
             </div>`
 
  }  
-listaTenistas.innerHTML = htmlAcumulado;
+
 }) 
 .catch(error => console.error("Error al cargar los datos:", error));
  }
 
-btnCargar.addEventListener("click", cargarTenistas);
+function cambiarTema() {
+    document.body.classList.toggle("dark");
+}
+
 btnTema.addEventListener("click", cambiarTema);
+btnCargar.addEventListener("click", cargarTenistas);
+
