@@ -1,12 +1,16 @@
 
 const btnCargar = document.getElementById("btn-cargar");
 const listaTenistas = document.getElementById("btn-tenistas");
+const btnTema = document.getElementById("btn-tema");
 
 function cargarTenistas () {
     fetch('js/datos.json')
     .then(res => res.json())
     .then(tenistas => {
-         for(tenista of tenistas)  {
+        
+        let htmlAcumulado = "";
+
+         for(const tenista of tenistas)  {
              document.querySelector("section").innerHTML +=
              `<div> <h2>  ${tenista.nombre}</h2>
              <p>Edad : ${tenista.edad} </p>
@@ -23,3 +27,4 @@ listaTenistas.innerHTML = htmlAcumulado;
  }
 
 btnCargar.addEventListener("click", cargarTenistas);
+btnTema.addEventListener("click", cambiarTema);
