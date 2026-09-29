@@ -42,7 +42,7 @@ header{
 h1{
     color: var(--primary-color);
     margin:20px;
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 800;
     margin-bottom: 0.8rem;
 
@@ -52,6 +52,7 @@ h1{
 h1+p{
     color: var(--primary-color);
     margin: 10px;
+    font-size: 1em;
 }
 
 main{
