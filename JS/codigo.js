@@ -12,7 +12,7 @@ function cargarTenistas () {
 
          for(tenista of tenistas)  {
              document.querySelector("#btn-tenistas").innerHTML +=
-             `<div> <h2 id="nombre">  ${tenista.nombre}</h2>
+             `<div> <h2 class="nombre">  ${tenista.nombre}</h2>
              <p><strong>Edad : </strong>${tenista.edad} </p>
              <p><strong>Mano : </strong>${tenista.mano}  </p>
               <p><strong>Revés : </strong>${tenista.reves}  </p>
