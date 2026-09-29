@@ -8,9 +8,9 @@ function cargarTenistas () {
     fetch('JS/datos.json')
     .then(res => res.json())
     .then(tenistas => {
-        document.querySelector("#btn-tenistas").innerHTML = "";
+       
 
-         for(const tenista of tenistas)  {
+         for(tenista of tenistas)  {
              document.querySelector("#btn-tenistas").innerHTML +=
              `<div> <h2 id="nombre">  ${tenista.nombre}</h2>
              <p><strong>Edad : </strong>${tenista.edad} </p>

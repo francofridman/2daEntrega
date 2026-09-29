@@ -6,11 +6,15 @@
     --ter-color: #ade8f4;
     --cuar-color:#495057;
     --head-color: #14213d;
+    --var-bod: #e3f2fd;
+
 
 
 
 }
-
+html{
+    font-size: 16px;
+}
 *{
     margin: 0;
     padding: 0;
@@ -37,7 +41,11 @@ header{
 
 h1{
     color: var(--primary-color);
-    
+    margin:20px;
+    font-size: 2em;
+    font-weight: 800;
+    margin-bottom: 0.8rem;
+
   
 }
 
@@ -51,8 +59,6 @@ main{
     margin: auto;
     text-align: center;
     height: 75vh;
-    
-    
     
 }
 
@@ -68,26 +74,46 @@ main{
     font-size: 1rem;
     padding: 10px;
     border-style: solid;
+    border-width: 1px;
 }
 
 .carta-tenis{
     background-color: var(--butt-one);
     color: var(--primary-color);
     border: none;
-    padding: 10px;
+    padding: 15px;
     border-radius: 20px;
-    font-size: 1rem;
+    font-size: 1em;
     box-shadow:  1px 1px 1px 1px black;
     margin: 50px;
+    width: 40vh;
 
 }
 
-#titulo-main {
+#intro-main {
     padding: 20px;
+    width: 120vh;
+    margin:20px auto;
+    border-radius: 5px;
+    border-style: solid ;
+    border-width: 1px;
+    border-color: #EBEBEB;
+   
+  
 }
 
 .text-main {
     padding: 10px;
+    ;
+}
+
+#tit-main{
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+#subtit-main{
+    font-size: 1rem;
 }
 
 
@@ -95,7 +121,6 @@ main{
 #btn-tenistas{
     text-align: center;
  
-    
 }
 
 #btn-tenistas div {
@@ -108,14 +133,14 @@ main{
     padding: 15px;
     border-radius: 8px;
     text-align: left;
-    font-size: 1rem;
+    font-size: 1em;
     font-style: italic;
 
 }
 
 #nombre{
     margin: 5px;
-    font-size: 1.4rem;
+    font-size: 1.4em;
     font-style: normal;
 
 }
