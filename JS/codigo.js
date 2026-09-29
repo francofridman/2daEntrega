@@ -5,7 +5,7 @@ const btnTema = document.getElementById("btn-tema");
 
 function cargarTenistas () {
 
-    fetch('js/datos.json')
+    fetch('JS/datos.json')
     .then(res => res.json())
     .then(tenistas => {
         document.querySelector("#btn-tenistas").innerHTML = "";
