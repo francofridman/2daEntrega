@@ -4,18 +4,19 @@ const listaTenistas = document.getElementById("btn-tenistas");
 const btnTema = document.getElementById("btn-tema");
 
 function cargarTenistas () {
+
     fetch('js/datos.json')
     .then(res => res.json())
     .then(tenistas => {
-        
+        document.querySelector("#btn-tenistas").innerHTML = "";
 
          for(const tenista of tenistas)  {
              document.querySelector("#btn-tenistas").innerHTML +=
-             `<div> <h2>  ${tenista.nombre}</h2>
-             <p>Edad : ${tenista.edad} </p>
-             <p>Mano : ${tenista.mano}  </p>
-              <p>Revés : ${tenista.reves}  </p>
-              <p>Características : ${tenista.caracteristicas}  </p>
+             `<div> <h2 id="nombre">  ${tenista.nombre}</h2>
+             <p><strong>Edad : </strong>${tenista.edad} </p>
+             <p><strong>Mano : </strong>${tenista.mano}  </p>
+              <p><strong>Revés : </strong>${tenista.reves}  </p>
+              <p><strong>Características : </strong>${tenista.caracteristicas}  </p>
            
             </div>`
 

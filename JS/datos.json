@@ -1,5 +1,5 @@
  [
         { "nombre": "Francisco Cerundolo", "edad": 28, "mano": "Derecha", "reves":"Dos manos", "caracteristicas":"Potente, agresivo y de mucho vértigo. Busca tomar la iniciativa constantemente con tiros pesados para desbordar al rival y asumir riesgos." },
-        { "nombre": "Sebastián Báez", "edad": 25, "mano": "Derecha", "reves":"Dos manos", "caracteristicas": "Veloz, sólido y de gran despliegue físico. Destaca por su cobertura de cancha, anticipación y una enorme fortaleza mental para desgastar en intercambios largos."},
+        { "nombre": "Sebastián Báez", "edad": 25, "mano": "Derecha", "reves":"Dos manos", "caracteristicas": "Veloz, sólido y de gran despliegue físico. Destaca por su cobertura de cancha, y una enorme fortaleza mental para desgastar en intercambios largos."},
         { "nombre": "Tomás Etcheverry", "edad": 27, "mano": "Derecha", "reves":"Dos manos", "caracteristicas":"Sólido, estructurado y apoyado en su envergadura. Domina los puntos a partir de un saque potente que le otorga ventaja desde el primer tiro." }
       ]

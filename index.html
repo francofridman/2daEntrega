@@ -4,22 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+
 </head>
 <body>
     
     <header>
-        <div>
+
             <h1>Copa Davis 2026</h1>
             <p>Siempre manteniendote informado sobre las últimas actualizaciones en el equipo nacional de Copa Davis.</p>
-            <Button id="btn-tema">Cambiar tema</Button>
+           <div id="tema">
+            <button id="btn-tema" class="carta-tema">Cambiar tema</button>
+            </div>
 
-        </div>
+    
     </header>
     <main>
         <section>
-            <h2>Explorá a nuestros tenistas</h2>
-            <p>Hacé click en el boton de abajo para ver a los 3 tenistas que representaran a la Argentina en el torneo de tenis de naciones mas importante del mundo.</p>
-            <button id="btn-cargar">Cargar tenistas</button>
+            <div id="titulo-main">
+            <h2 class="text-main">Explorá a nuestros tenistas</h2>
+            <p class="text-main">Hacé click en el boton de abajo para ver a los 3 tenistas que representaran a la Argentina en el torneo de tenis de naciones mas importante del mundo.</p>
+            </div>
+            
+            <button id="btn-cargar" class="carta-tenis">Cargar tenistas</button>
 
         </section>
         <section id="btn-tenistas">
@@ -31,7 +38,9 @@
         
     </main>
 
-    <footer></footer>
+    <footer>
+        <p>2026 Copa Davis. Copyrights Fridman</p>
+    </footer>
 
 
     <script src="js/codigo.js">  </script>
